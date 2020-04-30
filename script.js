@@ -43,7 +43,8 @@ function init() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   let imgUrl = document.getElementById("imgUrl");
-  imgUrl.addEventListener("change", () => {
+  let button = document.getElementById("btn");
+  button.addEventListener("click", () => {
     updateImage(imgUrl.value);
   });
 

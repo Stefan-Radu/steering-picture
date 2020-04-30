@@ -3,12 +3,14 @@
 <html>
 
   <head>
+    <title>Steering Picture</title>
     <script src = "globals.js" defer></script>
     <script src = "vector2d.js" defer></script>
     <script src = "circle.js" defer></script>
     <script src = "utils.js" defer></script>
     <script src = "script.js" defer></script>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -16,6 +18,7 @@
     <div id = "topBar">
       <label for = "imgUrl">Image URL</label>
       <input type = "text" id = "imgUrl" placeholder = "https://www.example.com/img.jpg">
+      <button class = "button" id = "btn"> Change Image </button>
     </div>
 
     <canvas id="canv"></canvas>
