@@ -32,6 +32,12 @@ function animationLoop() {
   window.requestAnimationFrame(animationLoop);
 }
 
+function downloadImage(el) {
+  let canvas = document.getElementById("canv");
+  let img = canvas.toDataURL("image/png");
+  el.href = img;
+}
+
 function init() {
 
   canvas = document.getElementById("canv");
